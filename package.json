@@ -1,0 +1,18 @@
+{
+  "name": "bitpos-node",
+  "version": "1.0.0",
+  "description": "Node.js Wrapper for Bitpos",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "bitpos",
+    "node"
+  ],
+  "author": "rjmacarthy",
+  "license": "ISC",
+  "dependencies": {
+    "superagent": "^1.4.0"
+  }
+}
