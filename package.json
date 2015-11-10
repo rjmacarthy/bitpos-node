@@ -4,7 +4,7 @@
   "description": "Node.js Wrapper for Bitpos",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "jasmine-node test/bitpos-spec.js"
   },
   "keywords": [
     "bitpos",
