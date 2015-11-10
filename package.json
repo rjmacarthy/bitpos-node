@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jasmine-node test/bitpos-spec.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjmacarthy/bitpos-node.git"
+  },
   "keywords": [
     "bitpos",
     "node"
