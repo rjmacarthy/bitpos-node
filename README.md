@@ -3,7 +3,8 @@
 
 A Small Node.js Wrapper for Bitpos.me
 
-Wesite: bitpos.me
+Wesite: https://bitpos.me
+
 API documentation : https://github.com/bitpos/api-doc
 
 ## Installation
@@ -61,6 +62,7 @@ API documentation : https://github.com/bitpos/api-doc
 Contact or fork.
 
 Email : richardmacarthy@hotmail.com
+
 Website : www.cryptogrind.com
 
 ## Release History
