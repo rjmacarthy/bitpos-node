@@ -11,7 +11,7 @@
     "node"
   ],
   "author": "rjmacarthy",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "superagent": "^1.4.0"
   }
