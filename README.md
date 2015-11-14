@@ -70,3 +70,4 @@ Website : www.cryptogrind.com
 * 1.0.0 Initial release
 * 1.0.3 Fixed bug with order status
 * 1.0.4 Added test or live net switch.
+* 1.0.5 Fixed an obvious bug
