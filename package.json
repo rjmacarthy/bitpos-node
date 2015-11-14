@@ -1,6 +1,6 @@
 {
   "name": "bitpos-node",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Node.js Wrapper for Bitpos",
   "main": "index.js",
   "scripts": {

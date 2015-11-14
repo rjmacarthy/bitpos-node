@@ -4,9 +4,10 @@ var request = require('superagent');
 var constants = require('./constants');
 
 var Bitpos = function(config) {
-    if (config) {
+    if (config && (config.username && config.password) {
         this.username = config.username;
         this.password = config.password;
+        this.baseUrl = config.live ? constants.base : constants.test;
     } else {
         throw new Error('Failed to instantiate, username and password needed');
     }
@@ -18,7 +19,7 @@ Bitpos.prototype.HandleError = function(err, callback) {
 
 Bitpos.prototype.create = function(order, callback) {
     var self = this;
-    var orderUrl = constants.base + constants.create;
+    var orderUrl = this.baseUrl + constants.create;
     if (this.username && this.password) {
         try {
             request.post(orderUrl)
@@ -48,7 +49,7 @@ Bitpos.prototype.create = function(order, callback) {
 
 Bitpos.prototype.status = function(id, callback) {
     var self = this;
-    statusUrl = constants.base + constants.order + id
+    statusUrl = this.baseUrl + constants.order + id
     request.get(statusUrl)
         .auth(this.username, this.password)
         .end(function(err, response) {
