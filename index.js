@@ -4,7 +4,7 @@ var request = require('superagent');
 var constants = require('./constants');
 
 var Bitpos = function(config) {
-    if (config && (config.username && config.password) {
+    if (config && (config.username && config.password)) {
         this.username = config.username;
         this.password = config.password;
         this.baseUrl = config.live ? constants.base : constants.test;
