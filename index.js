@@ -33,7 +33,7 @@ Bitpos.prototype.create = function(order, callback) {
                         if (response && response.body && response.status === 200) {
                             callback(null, response.body);
                         } else {
-                            return this.HandleError(err, callback);
+                            return self.HandleError(err, callback);
                         }
                     }
                 });
@@ -49,9 +49,9 @@ Bitpos.prototype.create = function(order, callback) {
 
 Bitpos.prototype.status = function(id, callback) {
     var self = this;
-    statusUrl = this.baseUrl + constants.order + id
+    statusUrl = self.baseUrl + constants.order + id
     request.get(statusUrl)
-        .auth(this.username, this.password)
+        .auth(self.username, self.password)
         .end(function(err, response) {
             if (err) {
                 return self.HandleError(err, callback);
