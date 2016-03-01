@@ -1,5 +1,4 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 var request = require('superagent');
 var constants = require('./constants');
 
@@ -49,7 +48,7 @@ Bitpos.prototype.create = function(order, callback) {
 
 Bitpos.prototype.status = function(id, callback) {
     var self = this;
-    statusUrl = self.baseUrl + constants.order + id
+    var statusUrl = self.baseUrl + constants.order + id;
     request.get(statusUrl)
         .auth(self.username, self.password)
         .end(function(err, response) {
