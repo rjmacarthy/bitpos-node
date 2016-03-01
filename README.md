@@ -71,3 +71,5 @@ Website : www.cryptogrind.com
 * 1.0.3 Fixed bug with order status
 * 1.0.4 Added test or live net switch.
 * 1.0.5 Fixed an obvious bug
+* 1.0.6 Fixed bug with error callback
+* 1.0.7 Cleanup
